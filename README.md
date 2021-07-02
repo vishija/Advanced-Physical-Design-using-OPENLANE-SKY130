@@ -41,4 +41,30 @@ Variables for floorplan
 ![variables for foorplanning](https://user-images.githubusercontent.com/22131133/124070764-f4ddfc80-da5b-11eb-874f-07778c205e03.PNG)
 These varibles can be modified according to our need from floorplane.tcl
 
+# Full layout seen in magic after floorplanning
+![entire lay_out](https://user-images.githubusercontent.com/22131133/124228070-41dbd480-db29-11eb-8776-adb1918e378b.PNG)
 
+# Uniform distance I/O pins
+![uniform distance IO pins](https://user-images.githubusercontent.com/22131133/124228208-7b144480-db29-11eb-8b3e-80ae6c16d854.PNG)
+
+# Horizontal I/O pins metal layer
+![layer_io_horizontal_pin](https://user-images.githubusercontent.com/22131133/124228289-a4cd6b80-db29-11eb-89d8-6561bbc1149a.PNG)
+
+# Vertical I/O pins metal layer
+![vertical io pins layer](https://user-images.githubusercontent.com/22131133/124228389-c4649400-db29-11eb-8671-94abe6e4f84f.PNG)
+
+# Preplaced cells
+![preplaced_cells](https://user-images.githubusercontent.com/22131133/124228469-dfcf9f00-db29-11eb-9a76-68f8f9bca85a.PNG)
+
+# Palcement and Routing
+
+1. Bind netlist with physical cells
+- shape of gate determines functionality of gate but in reality we have rectangular box with specific width and height for all gates and components
+- library has verious gates with different sizes, a gate with lesser size is slower compared with a cell having large size. Laso library has timing information of all cells
+
+2. Placement
+- Placement of all blocks is done such that preplaced cells are not moved.
+- First try to place cells near to each other which are connected, so no need of repeater/buffers between the cells
+- If distance between cells is large then buffers are needed so there is signal integrity maintained. 
+- insetring repeaters based on estimating wire length and capacitance 
+- 
