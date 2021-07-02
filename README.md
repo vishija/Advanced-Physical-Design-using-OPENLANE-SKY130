@@ -114,3 +114,9 @@ These varibles can be modified according to our need from floorplane.tcl
 4. CMOS inverter is a robust design. Parameters to define robust design - 
    - Switching threshold - Point where Vin=Vout when both NMOS and PMOS are in saturation region 
 
+
+
+# Inverter layout
+![inverter layout](https://user-images.githubusercontent.com/22131133/124278197-969c4100-db63-11eb-9e1e-9af3700d5f60.PNG)
+
+
