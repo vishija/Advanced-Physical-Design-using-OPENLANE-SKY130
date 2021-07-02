@@ -97,4 +97,20 @@ These varibles can be modified according to our need from floorplane.tcl
      - Apply load capacitors
      - Provide simulation command
      - Feed all these to a characterization sowtware GUNA which gives power,noise,timing library files
+   - Timing Characterization
+     - Timing definitions 1.skew_low_rise_thr 2.skew_high_rise_thr 3.skew_low_fall_thr 4.skew_high_fall_thr 5.in_rise_thr 6.in_fall_thr 7.out_rise_thr 8.out_fall_thr
+ 
+ 
+
+# Day 3
+
+1. SPICE deck creation for inverter
+- Component connectivity
+- Component values - W/L of NMOS and PMOS, load capacitor, input voltage, supply voltage
+- Identify nodes and give names to nodes
+
+2. Simulated inverter with same width of NMOS and PMOS after that simulated inverter with Wp>Wn such that Wp=2.5Wn
+3. Then static characteristics shifted right when Wn=2.5Wn than when Wn=Wp
+4. CMOS inverter is a robust design. Parameters to define robust design - 
+   - Switching threshold - Point where Vin=Vout when both NMOS and PMOS are in saturation region 
 
