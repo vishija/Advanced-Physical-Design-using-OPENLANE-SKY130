@@ -82,8 +82,19 @@ These varibles can be modified according to our need from floorplane.tcl
 - Standard cells such as gates,flipflop,latch etc kept in library. It has different sizes of different cells also with different functionalities.
 - Larger cells has high drive strength  
 - Inputs for cell design flow - Process Design Kit (PDK) consist of DRC and LVS rules, SPICE models and library and user defined specs.
-   - SPICE models has constant such as Tox, Cox, etc
+   - SPICE models has constant such as Tox, Cox, Vth etc
    - Library & used defined specs such as cell height, supply voltage, metal layers, pin locations
 - Design step - Circuit design, layout design and characterization
    - Circuit design has steps such as function implementation using NMOS and PMOS and designing W/L of PMOS and NMOS depending upon given values.We get cercuit design language (CDL) file as a output of circuit design.
-   - Layout design has steps such as get the NMOS and PMOS network graph then find euler's path then draw stick diagram
+   - Layout design has steps such as get the NMOS and PMOS network graph then find euler's path then draw stick diagram then convert stick diagram into layout according to DRC,LVS rules, pin locations, user defined specs,etc.Then EDA tool will create cell layout.
+   - Characterization means extract resistance and capacitance of each nodes and do characterization.
+     - Read Spice models
+     - Read Extracted SPICE netlist
+     - Recognize behaviour of cell
+     - Read subcircuits of cell
+     - Attach power sources
+     - Apply stimulus
+     - Apply load capacitors
+     - Provide simulation command
+     - Feed all these to a characterization sowtware GUNA which gives power,noise,timing library files
+
