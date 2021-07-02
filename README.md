@@ -84,3 +84,6 @@ These varibles can be modified according to our need from floorplane.tcl
 - Inputs for cell design flow - Process Design Kit (PDK) consist of DRC and LVS rules, SPICE models and library and user defined specs.
    - SPICE models has constant such as Tox, Cox, etc
    - Library & used defined specs such as cell height, supply voltage, metal layers, pin locations
+- Design step - Circuit design, layout design and characterization
+   - Circuit design has steps such as function implementation using NMOS and PMOS and designing W/L of PMOS and NMOS depending upon given values.We get cercuit design language (CDL) file as a output of circuit design.
+   - Layout design has steps such as get the NMOS and PMOS network graph then find euler's path then draw stick diagram
