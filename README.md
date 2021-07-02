@@ -66,5 +66,5 @@ These varibles can be modified according to our need from floorplane.tcl
 - Placement of all blocks is done such that preplaced cells are not moved.
 - First try to place cells near to each other which are connected, so no need of repeater/buffers between the cells
 - If distance between cells is large then buffers are needed so there is signal integrity maintained. 
-- insetring repeaters based on estimating wire length and capacitance 
+- insetring repeaters based on estimating wire length and capacitance, if wire lenght between cells is large then signal loses its strength.
 - 
