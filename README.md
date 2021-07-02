@@ -67,4 +67,20 @@ These varibles can be modified according to our need from floorplane.tcl
 - First try to place cells near to each other which are connected, so no need of repeater/buffers between the cells
 - If distance between cells is large then buffers are needed so there is signal integrity maintained. 
 - insetring repeaters based on estimating wire length and capacitance, if wire lenght between cells is large then signal loses its strength.
-- 
+- If some perticular circuit is working on high frequency, then all connected cells are placed very close to each other.
+- Placing buffers is called as placement optimization 
+
+3. Congestion aware placement using RePlace
+- First global placement then detailed placement Golbal - No legelization i.e cells can overlap. Purpose is to reduce wire length  Detailed placement - cells cant be overlap
+- Reduction of Half Parameter Wire Length (HPWL) is main focus in global placement
+# Layout after placement
+![layout_after_placement](https://user-images.githubusercontent.com/22131133/124259657-61d0bf80-db4c-11eb-974e-7c935f17584f.PNG)
+# zoomed version
+![zoomed_version_after_placement](https://user-images.githubusercontent.com/22131133/124259698-6eedae80-db4c-11eb-9cfc-f46e789a51c7.PNG)
+
+4. Standard cell design flow
+- Standard cells such as gates,flipflop,latch etc kept in library. It has different sizes of different cells also with different functionalities.
+- Larger cells has high drive strength  
+- Inputs for cell design flow - Process Design Kit (PDK) consist of DRC and LVS rules, SPICE models and library and user defined specs.
+   - SPICE models has constant such as Tox, Cox, etc
+   - Library & used defined specs such as cell height, supply voltage, metal layers, pin locations
