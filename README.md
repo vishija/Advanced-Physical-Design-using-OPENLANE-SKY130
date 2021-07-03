@@ -119,5 +119,30 @@ These varibles can be modified according to our need from floorplane.tcl
 # Inverter layout
 ![inverter layout](https://user-images.githubusercontent.com/22131133/124278197-969c4100-db63-11eb-9e1e-9af3700d5f60.PNG)
 
+- NMOS
 
-jiojolj
+![nmos_shown_tkcon](https://user-images.githubusercontent.com/22131133/124350225-0d434800-dc11-11eb-8c94-3fa8a3465165.PNG)
+
+- PMOS
+
+![PMOS_tkcon](https://user-images.githubusercontent.com/22131133/124350287-73c86600-dc11-11eb-9c4b-672c0e90088f.PNG)
+
+- For selecting any region, place cursor and type s
+
+- Extract on spice
+  - Create extraction file command - "extract all"
+  
+  ![extract netlist](https://user-images.githubusercontent.com/22131133/124350798-61036080-dc14-11eb-8efc-8d2aa6fbac1a.PNG)
+
+  - sky130_inv.txt
+  
+  ![sky130_inv](https://user-images.githubusercontent.com/22131133/124350928-17ffdc00-dc15-11eb-9dd7-2a665ebe841b.PNG)
+
+  - Create spice file command - "ext2spice cthrash 0 rthrash 0" (extract all parasitic capacitances) then command "ext2spice"
+    
+    ![ext2spice_tkcon](https://user-images.githubusercontent.com/22131133/124351766-eb01f800-dc19-11eb-85c3-2b0b78611dde.PNG)
+    
+  - Spice file for inverter
+  
+    ![sky130_inv spice](https://user-images.githubusercontent.com/22131133/124351829-3c11ec00-dc1a-11eb-91a1-14594787b069.PNG)
+
