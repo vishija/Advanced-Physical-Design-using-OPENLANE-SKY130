@@ -120,3 +120,4 @@ These varibles can be modified according to our need from floorplane.tcl
 ![inverter layout](https://user-images.githubusercontent.com/22131133/124278197-969c4100-db63-11eb-9e1e-9af3700d5f60.PNG)
 
 
+jiojolj
