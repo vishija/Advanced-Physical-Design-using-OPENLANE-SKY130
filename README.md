@@ -142,7 +142,16 @@ These varibles can be modified according to our need from floorplane.tcl
     
     ![ext2spice_tkcon](https://user-images.githubusercontent.com/22131133/124351766-eb01f800-dc19-11eb-85c3-2b0b78611dde.PNG)
     
-  - Spice file for inverter
+  - Spice file for inverter before modifications
   
     ![sky130_inv spice](https://user-images.githubusercontent.com/22131133/124351829-3c11ec00-dc1a-11eb-91a1-14594787b069.PNG)
+    
+  - Spice file for inverter after modifications
+    
+    ![spice file after modification](https://user-images.githubusercontent.com/22131133/124356644-a8014e00-dc34-11eb-8aed-c02bff99dff7.PNG)
 
+  - inverter simulation
+  
+    ![simulation waveform](https://user-images.githubusercontent.com/22131133/124356585-5bb60e00-dc34-11eb-8c64-a36e07746a0c.PNG)
+
+    
